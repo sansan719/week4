@@ -1,3 +1,426 @@
-.index-title {
-  font-size: 100px;
+// Banner 
+.banner {
+    background: url(../images/home-header.png) center / cover;
+    height: 787px;
+
+    @media (max-width: 768px) {
+        background: url(../images/home-header-sm.png) center / cover;
+        height: 396px;
+    }
+}
+
+.banner-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.banner-title {
+    font-size: 36px;
+    color: $text-red;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 16px;
+    }
+}
+
+.banner-content {
+    font-size: 64px;
+    color: $text-red;
+    font-weight: bold;
+
+    @media (max-width: 768px) {
+        font-size: 36px;
+    }
+
+    @media (max-width: 375px) {
+        font-size: 24px;
+    }
+}
+
+.banner-btn {
+    background-color: $primary-red;
+    color: $white;
+    font-size: 20px;
+    display: block;
+    padding: 6px 12px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+// features
+.features {
+    background-color: $primary-pink;
+    padding: 80px 0;
+
+    @media (max-width: 375px) {
+        padding: 40px 0;
+    }
+}
+
+.features-title {
+    width: 100%;
+    font-size: 48px;
+    font-weight: bold;
+    color: $text-red;
+    text-align: center;
+    margin-bottom: 32px;
+
+    @media (max-width: 375px) {
+        font-size: 24px;
+    }
+}
+
+.features-cards {
+    display: flex;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 375px) {
+        flex-direction: column;
+    }
+}
+
+.features-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    @media (max-width: 375px) {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .card-img {
+        width: 83.33px;
+        height: 83.33px;
+        margin-bottom: 24px;
+    }
+    
+    .card-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: $text-red;
+        margin-bottom: 8px;
+    }
+}
+
+// classic-frame
+.classic-frame {
+    padding: 80px 0;
+
+    @media (max-width: 375px) {
+        padding: 40px 0;
+    }
+}
+
+.classic-frame-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: $text-red;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @media (max-width: 375px) {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+.classic-frame-cards {
+    display: flex;
+
+    @media (max-width: 992px) {
+        flex-wrap: wrap;
+    }
+}
+
+.classic-frame-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 12px;
+
+    @media (max-width: 992px) {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    @media (max-width: 375px) {
+        padding: 0;
+    }
+
+    .card-img {
+        margin-bottom: 8px;
+    
+        @media (max-width: 992px) {
+            width: 50%;
+        }
+    
+        @media (max-width: 375px) {
+            width: 100%;
+        }
+    }
+    
+    .card-title {
+        font-size: 48px;
+        font-weight: bold;
+        font-style: italic;
+        color: $primary-red;
+    }
+}
+
+// crossover
+.crossover {
+    background: url(../images/index-bg.png) center / cover;
+    padding: 80px 0;
+    
+    @media (max-width: 375px) {
+        padding: 40px 0;
+    }
+}
+
+.crossover-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: $white;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @media (max-width: 375px) {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+}
+
+.crossover-cards {
+    display: flex;
+    
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.crossover-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+    @media (max-width: 375px) {
+        width: 100%;
+        padding: 0;
+    }
+
+    &:first-child {
+        @media (max-width: 768px) {
+            margin-bottom: 24px;
+        }
+        @media (max-width: 375px) {
+            margin-bottom: 24px;
+        }
+    }
+
+    .card-title {
+        background-color: $white;
+        width: 100%;
+        font-size: 48px;
+        font-weight: bold;
+        font-style: italic;
+        color: $primary-red;
+        text-align: center;
+        padding: 8px 0;
+    }
+    
+    .card-img {
+        width: 100%;
+    }
+}
+
+// recommendation
+.recommendation {
+    padding: 80px 0;
+    
+    @media (max-width: 375px) {
+        padding: 40px 0;
+    }
+}
+
+.recommendation-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: $text-red;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @media (max-width: 375px) {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+.recommendation-cards {
+    display: flex;
+    gap: 24px;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 375px) {
+        flex-wrap: wrap;
+    }
+}
+
+.recommendation-item {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid $border-gray;
+    box-shadow: 0 2px 6px #00000029;
+    
+    @media (max-width: 768px) {
+        width: calc(50% - 12px);
+    }
+
+    @media (max-width: 375px) {
+        width: 100%;
+        padding: 0;
+    }
+
+    .card-img {
+        margin-bottom: 16px;
+    }
+    
+    .card-title {
+        font-size: 16px;
+        margin-bottom: 8px;
+        margin-left: 16px;
+    }
+}
+
+.recommendation-item-content {
+    height: 206px;
+}
+
+.recommendation-comment {
+    margin: 0 16px;
+}
+
+.recommendation-date {
+    font-size: 14px;
+    color: $text-gray;
+    justify-self: end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+// Contact-us
+.contact-us {
+    background-color: $primary-pink;
+    padding: 80px 0;
+    
+    @media (max-width: 375px) {
+        padding: 40px 0;
+    }
+}
+
+.contact-us-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: $text-red;
+    text-align: center;
+    margin-bottom: 48px;
+
+    @media (max-width: 375px) {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+.contact-us-form {
+    padding: 0 12px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 768px) {
+        width: 83.333%;
+    }
+
+    @media (max-width: 375px) {
+        width: 100%;
+    }
+}
+
+.contact-us-info {
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.contact-us-input-group {
+    width: 100%;
+}
+
+.contact-us-input-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+
+    label {
+        margin-bottom: 8px;   
+    }
+
+    input, textarea {
+        padding: 6px 12px;
+        background-color: $primary-pink;
+    }
+}
+
+.send-btn {
+    margin-top: 48px;
+    display: block;
+    width: 60%;
+    background-color: $primary-red;
+    color: $white;
+    text-align: center;
+    align-self: center;
+    padding: 16px 0;
+
+    @media (max-width: 375px) {
+        margin-top: 24px;
+        width: 100%;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
 }

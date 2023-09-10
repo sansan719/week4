@@ -1,0 +1,19 @@
+.container {
+    // 1296 + 12 + 12
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+
+    // 平板
+    @media (max-width: 768px) {
+        // 12*36+11*24 + 24
+        max-width: 720px;
+    }
+
+    // 手機
+    @media (max-width: 375px) {
+        // 4*69+3*24 + 24
+        max-width: 372px;
+    }
+
+}

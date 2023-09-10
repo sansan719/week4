@@ -1,4 +1,72 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar {
+  padding: 16px 0;
+
+  @media (max-width: 768px) {
+    padding-bottom: 0;
+  }
 }
+
+.bg-primary {
+  background-color: $primary-red;
+}
+
+.navbar-wrap {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    /* 移除左右 padding 再加入 max-width: 100%; 讓導覽列能變為滿版 */
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+}
+
+.navbar-logo {
+  width: 80px;
+  
+  @media (max-width: 768px) {
+    margin: 16px;
+  }
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+.navbar-item {
+  height: 100%;
+  @media (max-width: 768px) {
+    width: 50%;
+    border: 1px solid $white;
+  }
+
+  &:last-child .navbar-link {
+    padding-right: 0;
+  }
+}
+
+.navbar-link {
+  display: block;
+  height: 100%;
+  color: $white;
+  font-size: 20px;
+  padding: 9px 32px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
